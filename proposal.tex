@@ -12,44 +12,43 @@
 \begin{document}
 %%% Header starts
 \noindent{\large\textbf{IS-521 Activity Proposal}\hfill
-                \textbf{Your Name}} \\
-         {\phantom{} \hfill \textbf{GitHub ID}} \\
+                \textbf{김건우}} \\
+         {\phantom{} \hfill \textbf{KAISTGUN}} \\
          {\phantom{} \hfill Due Date: April 15, 2017} \\
 %%% Header ends
 
+
+\section{Goals}
+이 Activity의 메인 goal은 실제 exploit이 어떤 방식으로 동작하는지 학습하는 것이다.
+
 \section{Activity Overview}
 
-Briefly describe what this activity is about, and \emph{why} you are
-proposing this activity. (활동에 대한 간략한 설명과 왜 이 활동을
-제안하는지에 대한 이유를 서술.)
+각 학생들은 자신들만의 서비스를 제공하 Exploitable한 서버를 개발한다.  
+vulnerability는 널리 알려진 취약점을 대상으로 한다. (ex. Buffer overflow, Heap overflow, Heap spray...)
+제작자는 서버와 함께 exploit할 수 있는 코드와 write-up을 제출한다. 이 액티비티는 그동안 학생들이 실습했던 것들을 종합하고 (서버 통신 및 프로그램 개발) 학기 마지막의 mini-CTF를 연습할 수 있는 좋은 계기가 될 것이다.
+
+(Inspired by DEFCON CTF)
 
 \section{Exercises}
 
-Describe a series of exercises that students will carry out. (학생들이 하게
-될 연습문제를 순차적으로 서술.)
-
 \begin{exercise}
 
-  In this exercise, you do ...
+  학생들이 자신만의 간략한 서비스를 제공하는 서버를 만든다. 복잡한 서버가 아닌 이전 실습에 사용되었던 Vulnet과 같은 로그인+ 쉘 제공 과 같은 nc로 접속이 가능한 간략한 기능만 가지고있다. 다만 이 서버는 vulnet과 같이 상당히 취약하며, 널리 알려진 exploit (Exploit 목록은 미리 주어진다).을 통해 특정 flag를 얻을 수 있다. 또한 이 서버에는 백도어가 존재한다.
 
 \end{exercise}
 
 \begin{exercise}
 
-  In this exercise, you do ...
-
-\end{exercise}
-
-\begin{exercise}
-
-  In this exercise, you do ...
+ 서버소스 코드를 제출한 뒤, 가장 교육적 효과가 높은 프로그램 하나를 선정해 가점을 주고 그 문제를 대상으로 CTF를 한다. 문제를 푼 사람은 write-up을 제출하며, 정해진 시간 내 가장 먼저 푼 사람에게 가점을 준다. 만약 백도어까지 발견할 경우 역시 가점을 준다.
 
 \end{exercise}
 
 \section{Expected Solutions}
 
-Put expected solutions here.
-(예상되는 답안에 대해서 서술.)
+
+1. 서버 코드\\ 모든 학생들은 자신만의 Unique한 서비스를 제공하는 솔루션을 제출한다.\\
+2. CTF\\학생들은 Write-up을 제공하되, 출제자가 원하는 방법으로 플래그를 얻었을 경우를 만점으로 환산한다. 또한 가장 먼저 성공한 사람과 백도어를 발견한 사람에게 가점을 준다.
+
 
 \bibliography{references}
 \bibliographystyle{plainnat}
